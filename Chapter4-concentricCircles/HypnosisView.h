@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HypnosisView : UIView
-@property (nonatomic, strong) UIColor* circleColor;
 void CGContextSetShadow (
                          CGContextRef context,
                          CGSize offset,

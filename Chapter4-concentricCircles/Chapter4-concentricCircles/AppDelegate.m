@@ -18,20 +18,33 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    CGRect firstFrameSize = CGRectMake([[UIScreen mainScreen] bounds].size.width/4, [[UIScreen mainScreen] bounds].size.height/4, [[UIScreen mainScreen] bounds].size.width/2, [[UIScreen mainScreen] bounds].size.height/2);
-//    HypnosisView *firstView = [[HypnosisView alloc]initWithFrame:firstFrameSIze];
-//    firstView.backgroundColor = [UIColor redColor];
-//    CGRect secondFrameSIze = CGRectMake([[UIScreen mainScreen] bounds].size.width/8, [[UIScreen mainScreen] bounds].size.height/8, [[UIScreen mainScreen] bounds].size.width/4, [[UIScreen mainScreen] bounds].size.height/4);
-//    HypnosisView *secondView = [[HypnosisView alloc]initWithFrame:secondFrameSIze];
-//    secondView.backgroundColor = [UIColor greenColor];
-//    [self.window addSubview:firstView];
-//    [firstView addSubview:secondView];
+    UIViewController *rootViewController = [[UIViewController alloc]init];
+    [self.window setRootViewController:rootViewController];
     CGRect screenRect = self.window.bounds;
+    CGRect bigRect = screenRect;
+    bigRect.size.width *= 2.0;
+//    bigRect.size.height *= 2.0;
     
+    // Create a screen-sized scroll view and add it to the window
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:screenRect];
+    scrollView.pagingEnabled = YES;
+    [rootViewController.view addSubview:scrollView];
+    
+    // Create a screen-sized hypnosis view and add it to the scroll view
     HypnosisView *hypnosisView = [[HypnosisView alloc] initWithFrame:screenRect];
-    [self.window addSubview:hypnosisView];
+    [scrollView addSubview:hypnosisView];
+    
+    // Add a second screen-sized hypnosis view just off screen to the right
+    screenRect.origin.x = screenRect.size.width;
+    HypnosisView *anotherView = [[HypnosisView alloc] initWithFrame:screenRect];
+    [scrollView addSubview:anotherView];
+    
+    // Tell the scroll view how big its content area is
+    scrollView.contentSize = bigRect.size;
+
+    
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[UIViewController alloc]init];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

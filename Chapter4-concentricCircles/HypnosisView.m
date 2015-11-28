@@ -7,6 +7,9 @@
 //
 
 #import "HypnosisView.h"
+@interface HypnosisView()
+@property (nonatomic, strong) UIColor* circleColor;
+@end
 
 @implementation HypnosisView
 
@@ -73,7 +76,34 @@
     CGContextSaveGState(currentContext);
     CGContextSetShadow(currentContext, CGSizeMake(4,7), 3);
     [logoImage drawInRect:someRect];
-//    CGContextRestoreGState(currentContext);
+    CGContextRestoreGState(currentContext);
 }
 
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"Moveddddd.");
+}
+
+-(void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"Cancled!!");
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [super touchesBegan:touches withEvent:event];
+    NSLog(@"%@ was touched",self);
+    float red = (arc4random() % 100) /100.0;
+    float green = (arc4random() % 100) /100.0;
+    float blue = (arc4random() % 100) /100.0;
+    NSLog(@"red = %f, green = %f, blue = %f",red,green,blue);
+    UIColor *randomColor = [UIColor colorWithRed:red green:green blue:blue alpha:1.0];
+    self.circleColor = randomColor;
+}
+
+-(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [super touchesEnded:touches withEvent:event];
+    NSLog(@"END!!!!!!!!!!");
+}
 @end
