@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F102D0D1C099BFA0022E460 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F102D0C1C099BFA0022E460 /* main.m */; };
+		1F102D101C099BFA0022E460 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F102D0F1C099BFA0022E460 /* AppDelegate.m */; };
+		1F102D121C099BFA0022E460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F102D111C099BFA0022E460 /* Assets.xcassets */; };
+		1F102D151C099BFA0022E460 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F102D131C099BFA0022E460 /* LaunchScreen.storyboard */; };
+		1F102D1E1C09A0DF0022E460 /* HypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F102D1D1C09A0DF0022E460 /* HypnosisView.m */; };
+		1F34165C1C09CFA300C7860C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F34165B1C09CFA300C7860C /* logo.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F102D081C099BFA0022E460 /* Chapter4-concentricCircles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter4-concentricCircles.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F102D0C1C099BFA0022E460 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F102D0E1C099BFA0022E460 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F102D0F1C099BFA0022E460 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F102D111C099BFA0022E460 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F102D141C099BFA0022E460 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F102D161C099BFA0022E460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F102D1C1C09A0DF0022E460 /* HypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HypnosisView.h; path = ../HypnosisView.h; sourceTree = "<group>"; };
+		1F102D1D1C09A0DF0022E460 /* HypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HypnosisView.m; path = ../HypnosisView.m; sourceTree = "<group>"; };
+		1F34165B1C09CFA300C7860C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F102D051C099BFA0022E460 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F102CFF1C099BFA0022E460 = {
+			isa = PBXGroup;
+			children = (
+				1F34165A1C09C8D600C7860C /* Res */,
+				1F102D0A1C099BFA0022E460 /* Chapter4-concentricCircles */,
+				1F102D091C099BFA0022E460 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F102D091C099BFA0022E460 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F102D081C099BFA0022E460 /* Chapter4-concentricCircles.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F102D0A1C099BFA0022E460 /* Chapter4-concentricCircles */ = {
+			isa = PBXGroup;
+			children = (
+				1F102D1C1C09A0DF0022E460 /* HypnosisView.h */,
+				1F102D1D1C09A0DF0022E460 /* HypnosisView.m */,
+				1F102D0E1C099BFA0022E460 /* AppDelegate.h */,
+				1F102D0F1C099BFA0022E460 /* AppDelegate.m */,
+				1F102D111C099BFA0022E460 /* Assets.xcassets */,
+				1F102D131C099BFA0022E460 /* LaunchScreen.storyboard */,
+				1F102D161C099BFA0022E460 /* Info.plist */,
+				1F102D0B1C099BFA0022E460 /* Supporting Files */,
+			);
+			path = "Chapter4-concentricCircles";
+			sourceTree = "<group>";
+		};
+		1F102D0B1C099BFA0022E460 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F102D0C1C099BFA0022E460 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F34165A1C09C8D600C7860C /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				1F34165B1C09CFA300C7860C /* logo.png */,
+			);
+			name = Res;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F102D071C099BFA0022E460 /* Chapter4-concentricCircles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F102D191C099BFA0022E460 /* Build configuration list for PBXNativeTarget "Chapter4-concentricCircles" */;
+			buildPhases = (
+				1F102D041C099BFA0022E460 /* Sources */,
+				1F102D051C099BFA0022E460 /* Frameworks */,
+				1F102D061C099BFA0022E460 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chapter4-concentricCircles";
+			productName = "Chapter4-concentricCircles";
+			productReference = 1F102D081C099BFA0022E460 /* Chapter4-concentricCircles.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F102D001C099BFA0022E460 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "胡振生";
+				TargetAttributes = {
+					1F102D071C099BFA0022E460 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 5ZFJLS9N8F;
+					};
+				};
+			};
+			buildConfigurationList = 1F102D031C099BFA0022E460 /* Build configuration list for PBXProject "Chapter4-concentricCircles" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F102CFF1C099BFA0022E460;
+			productRefGroup = 1F102D091C099BFA0022E460 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F102D071C099BFA0022E460 /* Chapter4-concentricCircles */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F102D061C099BFA0022E460 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F102D121C099BFA0022E460 /* Assets.xcassets in Resources */,
+				1F102D151C099BFA0022E460 /* LaunchScreen.storyboard in Resources */,
+				1F34165C1C09CFA300C7860C /* logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F102D041C099BFA0022E460 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F102D101C099BFA0022E460 /* AppDelegate.m in Sources */,
+				1F102D0D1C099BFA0022E460 /* main.m in Sources */,
+				1F102D1E1C09A0DF0022E460 /* HypnosisView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1F102D131C099BFA0022E460 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F102D141C099BFA0022E460 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F102D171C099BFA0022E460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		1F102D181C099BFA0022E460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F102D1A1C099BFA0022E460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Chapter4-concentricCircles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.suool.Chapter4-concentricCircles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F102D1B1C099BFA0022E460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Chapter4-concentricCircles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.suool.Chapter4-concentricCircles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F102D031C099BFA0022E460 /* Build configuration list for PBXProject "Chapter4-concentricCircles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F102D171C099BFA0022E460 /* Debug */,
+				1F102D181C099BFA0022E460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F102D191C099BFA0022E460 /* Build configuration list for PBXNativeTarget "Chapter4-concentricCircles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F102D1A1C099BFA0022E460 /* Debug */,
+				1F102D1B1C099BFA0022E460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F102D001C099BFA0022E460 /* Project object */;
+}
