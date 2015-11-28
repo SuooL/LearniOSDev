@@ -7,39 +7,42 @@
 //
 
 #import <Foundation/Foundation.h>
-#include "Item.h"
+#import "Item.h"
+#import "Container.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // 创建并初始化 NSMutableArray 对象，并用 items 保存返回的指针对象的地址
         NSMutableArray *items = [[NSMutableArray alloc] init];
-        // 向 items 所指向的 NSMutableArray 对象发送消息，存入数据
-        [items addObject:@"One"];
-        [items addObject:@"TWo"];
-        [items addObject:@"Three"];
-        // 换种方式发消息，插入数据
-        [items insertObject:@"Zero" atIndex:0];
-        // 循环输出
-        for (int i = 0; i < [items count]; i++) {
-            NSString *item = [items objectAtIndex:i];
-            NSLog(@"第一种循环方式输出%@", item);
-        }
-        // 循环输出
-        for(NSString *item in items){
-            NSLog(@"第二种循环方式的输出%@", item);
-        }
-        
-        items = nil;
         
         // 使用自定义的类
-        Item *item = [[Item alloc]init];
-        item.itemName = @"MacBookPro";
-        item.valuePrice = 12988;
-        item.serialNumber = @"CNKS2328";
+        for (int i = 0; i< 10; i++) {
+            Item *item = [Item randomItem];
+            items[i] = item;
+            NSLog(@"%@", item);
+        }
+        // 异常代码
+        // NSLog(@"%@", items[10]);
         
-        NSLog(@"%@ %@ %@ %d", item.itemName, item.serialNumber, item.dateCreate, item.valuePrice);
+        NSLog(@"New SubItem");
+        Container *containerItemBig = [ [Container alloc] initWithItemName:@"BackPack" valuePrice:200 serialNumber:@"2we33rdwwd"];
+        Container *containerItemSmall = [ [Container alloc] initWithItemName:@"Pocket" valuePrice:100 serialNumber:@"2we33rdwwd"];
+        for (int i=0; i<3; i++) {
+            Item *item = [Item randomItem];
+            [containerItemBig addItemToContainer:item];
+        }
         
-        NSLog(@"%@", item);
+        for (int i=0; i<3; i++) {
+            Item *item = [Item randomItem];
+            [containerItemSmall addItemToContainer:item];
+        }
+        
+        [containerItemBig addContainerToContainer:containerItemSmall];
+        
+        NSLog(@"%@", containerItemBig);
+        
+        
+        items = nil;
     }
     return 0;
 }

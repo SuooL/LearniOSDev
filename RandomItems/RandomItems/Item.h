@@ -9,24 +9,24 @@
 #import <Foundation/Foundation.h>
 
 @interface Item : NSObject
-{
-    NSString *_itemName;
-    NSString *_serialNumber;
-    int _valuePrice;
-    NSDate *_dateCreate;
-}
++ (instancetype) randomItem;
 
 - (instancetype) initWithItemName:(NSString *)name
                        valuePrice:(int) preice
                      serialNumber:(NSString *)sn;
 
+- (instancetype)initWithItemName:(NSString *)name
+                      valuePrice:(int) preice;    // 第二个初始化方法
+
 -(instancetype) initWithItemName:(NSString *)name;
 
-- (void) setItemName:(NSString *) str;
-- (NSString *) itemName;
-- (void) setSerialNumber:(NSString *) str;
-- (NSString *) serialNumber;
-- (void) setValuePrice: (int) price;
-- (int) valuePrice;
-- (NSDate *) dateCreate;
+@property (nonatomic, strong) Item *containItem;
+@property (nonatomic, weak) Item *container;
+
+@property (nonatomic, copy) NSString *itemName;
+@property (nonatomic, copy) NSString *serialNumber;
+@property (nonatomic) int valuePrice;
+@property (nonatomic, readonly, strong) NSDate *dateCreated;
+
+
 @end
