@@ -50,6 +50,28 @@ UIViewController *vc = [[UIViewController alloc] init];
 
 ### 2015年11月29日
 
+第六章的一个问题：模拟器和真机测试均无法push noti
+
+解决方法：
+设置 UIUserNotificationSettings
+```
+    1. - (IBAction)addReminder:(id)sender
+    2. {
+    3. NSDate *date = self.datePicker.date;
+    4. NSLog(@"Setting a reminder for %@", date);
+    5. UILocalNotification *note = [[UILocalNotification alloc] init];
+    6. note.alertBody = @"Hypnotize me!";
+    7. note.fireDate = date;
+    8. UIApplication *application = [UIApplication sharedApplication];
+    9. UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert categories:nil];
+    10. [application registerUserNotificationSettings:settings];
+    11. [application scheduleLocalNotification:note];
+    12. }
+```
+实测后确认noti会正常显示（测试机：iphone5， iOS9.0.2)
+详见论坛讨论：
+http://forums.bignerdranch.com/viewtopic.php?f=487&t=8938&sid=3f17937d55ed171f4b6cd44a8b319752&start=10
+
 iOS 编程第七章，第八章学习完成。
 
 这两章主要介绍和学习一种设计模式--委托设计模式以及两个常用基本组件：UITextField 和 UITableVIew。
