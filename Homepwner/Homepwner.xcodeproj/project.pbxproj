@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F10BBD71C0B4A3F006A2C96 /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F10BBD61C0B4A3F006A2C96 /* ItemsViewController.m */; };
+		1F10BBDA1C0B50D6006A2C96 /* ItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F10BBD91C0B50D6006A2C96 /* ItemStore.m */; };
 		1F5222A41C0B3FA60087D323 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5222A31C0B3FA60087D323 /* main.m */; };
 		1F5222A71C0B3FA60087D323 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5222A61C0B3FA60087D323 /* AppDelegate.m */; };
 		1F5222A91C0B3FA60087D323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5222A81C0B3FA60087D323 /* Assets.xcassets */; };
@@ -15,6 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F10BBD51C0B4A3F006A2C96 /* ItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsViewController.h; sourceTree = "<group>"; };
+		1F10BBD61C0B4A3F006A2C96 /* ItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsViewController.m; sourceTree = "<group>"; };
+		1F10BBD81C0B50D6006A2C96 /* ItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemStore.h; sourceTree = "<group>"; };
+		1F10BBD91C0B50D6006A2C96 /* ItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemStore.m; sourceTree = "<group>"; };
 		1F52229F1C0B3FA60087D323 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5222A31C0B3FA60087D323 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F5222A51C0B3FA60087D323 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +66,10 @@
 				1F5222B41C0B3FD20087D323 /* Item.m */,
 				1F5222A51C0B3FA60087D323 /* AppDelegate.h */,
 				1F5222A61C0B3FA60087D323 /* AppDelegate.m */,
+				1F10BBD81C0B50D6006A2C96 /* ItemStore.h */,
+				1F10BBD91C0B50D6006A2C96 /* ItemStore.m */,
+				1F10BBD51C0B4A3F006A2C96 /* ItemsViewController.h */,
+				1F10BBD61C0B4A3F006A2C96 /* ItemsViewController.m */,
 				1F5222A81C0B3FA60087D323 /* Assets.xcassets */,
 				1F5222AA1C0B3FA60087D323 /* LaunchScreen.storyboard */,
 				1F5222AD1C0B3FA60087D323 /* Info.plist */,
@@ -146,7 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F10BBDA1C0B50D6006A2C96 /* ItemStore.m in Sources */,
 				1F5222B51C0B3FD20087D323 /* Item.m in Sources */,
+				1F10BBD71C0B4A3F006A2C96 /* ItemsViewController.m in Sources */,
 				1F5222A71C0B3FA60087D323 /* AppDelegate.m in Sources */,
 				1F5222A41C0B3FA60087D323 /* main.m in Sources */,
 			);
@@ -287,6 +299,7 @@
 				1F5222B21C0B3FA60087D323 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
