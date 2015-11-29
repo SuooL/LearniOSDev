@@ -49,3 +49,16 @@ UIViewController *vc = [[UIViewController alloc] init];
 同时还要注意原文说 BNRHypnosisView.m 文件中应该有两个函数，initWithFrame是一个，另一个就是被注释掉的 drawRect 函数，你需要自己实现一个<code> -(void)drawRect:(CGRect)rect </code>函数.
 
 ### 2015年11月29日
+
+iOS 编程第七章，第八章学习完成。
+
+这两章主要介绍和学习一种设计模式--委托设计模式以及两个常用基本组件：UITextField 和 UITableVIew。
+
+经过这几天的学习，感觉 iOS 的封装性确实比 Android 的高，也即是比 Android 更加封闭，但是同时也更易学习。
+
+感觉有了 Android 的编程经验对于 iOS 的学习还是有一定的帮助的。
+
+### 2015年11月30日
+
+
+
