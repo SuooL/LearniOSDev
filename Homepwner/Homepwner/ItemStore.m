@@ -47,12 +47,29 @@
     return self.privateItems;
 }
 
+
 -(Item *)createItem
 {
     Item *item = [Item randomItem];
+    
     [self.privateItems addObject:item];
     
     return item;
+}
+
+-(void)removeItem:(Item *)item
+{
+    [self.privateItems removeObjectIdenticalTo:item];
+}
+
+-(void)moveItemAtIndex:(NSUInteger)fromIndex toIndex:(NSUInteger)toIndex
+{
+    if (fromIndex == toIndex) {
+        return;
+    }
+    Item *fromIndexItem = [self.privateItems objectAtIndex:fromIndex];  // 获取要删除的
+    [self.privateItems removeObjectAtIndex:fromIndex];    // 删除旧位置的
+    [self.privateItems insertObject:fromIndexItem atIndex:toIndex]; // 插入新位置
 }
 
 @end
