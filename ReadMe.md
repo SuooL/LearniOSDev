@@ -82,5 +82,12 @@ iOS 编程第七章，第八章学习完成。
 
 ### 2015年11月30日
 
+iOS 编程第九章，第十章，第十一章学习完成。
+
+这三章的主要内容是 UITabelView 的编辑，UINavigationController 的使用，以及相机相关的功能比如 UIImageView & UIImagePickerController。
+
+另外有一个新的数据结构：NSDictionary 的学习。
+
+准备，接下来把布局，网络处理，本地化数据，和 StoryBoard 学习了解下，就通过项目来深入学习其他的东西了。
 
 
