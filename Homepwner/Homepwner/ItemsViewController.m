@@ -9,7 +9,6 @@
 #import "ItemsViewController.h"
 #import "ItemStore.h"
 #import "Item.h"
-
 @interface ItemsViewController ()
 @property (nonatomic, strong) IBOutlet UIView* headerView;
 @end
@@ -195,6 +194,7 @@
     
     return YES;
 }
+
 
 
 // gets a mutable array of items that have a value over 50
