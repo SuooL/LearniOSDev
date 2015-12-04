@@ -114,8 +114,22 @@ iOS 编程第十四章，第十五章学习完成。
 
 这两章节主要学习了 iOS 编程的调试工具以及基本的常用的调试方法；以及自动布局入门，主要学习的是使用 Xcode 进行添加约束，实现自动布局。
 
-同时将Bilibili的乱童的Dota2百科客户端跟进完毕，对图片缓存有一定的了解，对于 TableView及Cell，以及 StoryBoard 有了一定的了解。
+计划明天将Bilibili的乱童的Dota2百科客户端跟进完毕，对图片缓存有一定的了解，对于 TableView及Cell，以及 StoryBoard 有了一定的了解。
 
 计划这周自己实现一个 Dota2 的百科客户端，并计划将 iGDUFE 的 iOS 版本做出来，练习下 AFNetworking 以及 YYKit 的用法。
+
+### 2015年12月3日
+iOS 编程第十六章学习完成。
+
+主要介绍的是在代码中使用自动布局的方法。
+
+另外乱童的 Dota2 的百科客户端视频看完了。对于 iOS 的实战编程基础有了一定的了解。
+
+### 2015年12月4日
+iOS 编程第十七章学习完成。
+
+这一章的主要内容是自动转屏的通知与判断，与UIPoppoverController 以及modal 视图控制器的更多用法。
+
+并且学习了 iMOOC 网上的 swift Weather 的课程，主要学了 Core Location，AFNetworking 的基本用法。
 
 
